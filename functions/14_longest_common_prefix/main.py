@@ -1,5 +1,5 @@
 class Solution:
-    def longestCommonPrefix(self, strs: list[str]) -> str:
+    def longest_common_prefix(self, strs: list[str]) -> str:
         if len(strs) == 1:
             return strs[0]
         base = strs.pop(0)
@@ -14,7 +14,7 @@ class Solution:
 
     # 別解：ソートした後に最小値と最大値で比較する。
     # メモリ効率はこっちのほうが良い。速さはLeetCode上はどちらでも同じ速度
-    def longestCommonPrefix_2(self, strs: list[str]) -> str:
+    def longest_common_prefix_2(self, strs: list[str]) -> str:
         ans = ""
         v = sorted(strs)
         first = v[0]
@@ -28,7 +28,7 @@ class Solution:
 
 if __name__ == "__main__":
     solution = Solution()
-    assert solution.longestCommonPrefix(["flower", "flow", "flight"]) == "fl"
-    assert solution.longestCommonPrefix(["dog", "racecar", "car"]) == ""
-    assert solution.longestCommonPrefix_2(["flower", "flow", "flight"]) == "fl"
-    assert solution.longestCommonPrefix_2(["dog", "racecar", "car"]) == ""
+    assert solution.longest_common_prefix(["flower", "flow", "flight"]) == "fl"
+    assert solution.longest_common_prefix(["dog", "racecar", "car"]) == ""
+    assert solution.longest_common_prefix_2(["flower", "flow", "flight"]) == "fl"
+    assert solution.longest_common_prefix_2(["dog", "racecar", "car"]) == ""

@@ -1,5 +1,5 @@
 class Solution:
-    def isPalindrome(self, x: int) -> bool:
+    def is_palindrome(self, x: int) -> bool:
         if x < 0:
             return False
 
@@ -21,6 +21,6 @@ class Solution:
 
 if __name__ == "__main__":
     solution = Solution()
-    print(solution.isPalindrome(121))
-    print(solution.isPalindrome(-121))
-    print(solution.isPalindrome(10))
+    print(solution.is_palindrome(121))
+    print(solution.is_palindrome(-121))
+    print(solution.is_palindrome(10))

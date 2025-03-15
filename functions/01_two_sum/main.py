@@ -1,5 +1,5 @@
 class Solution:
-    def twoSum(self, nums: list[int], target: int) -> list[int]:
+    def two_sum(self, nums: list[int], target: int) -> list[int]:
         # HashMapの方法
         # 現在の要素の補数（target から現在の要素を引いた値）が
         # すでにハッシュテーブル内に存在するか確認します。
@@ -17,6 +17,6 @@ class Solution:
 
 if __name__ == "__main__":
     solution = Solution()
-    print(solution.twoSum([2, 7, 11, 15], 9))
-    print(solution.twoSum([3, 2, 4], 6))
-    print(solution.twoSum([3, 3], 6))
+    print(solution.two_sum([2, 7, 11, 15], 9))
+    print(solution.two_sum([3, 2, 4], 6))
+    print(solution.two_sum([3, 3], 6))

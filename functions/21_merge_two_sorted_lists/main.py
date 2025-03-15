@@ -9,7 +9,7 @@ class ListNode:
 
 
 class Solution:
-    def mergeTwoLists(
+    def merge_two_lists(
         self, list1: ListNode | None, list2: ListNode | None
     ) -> ListNode | None:
         # ガード節によるチェック
@@ -45,12 +45,12 @@ if __name__ == "__main__":
     solution = Solution()
     l1 = ListNode(val=1, next=ListNode(val=2, next=ListNode(val=4, next=None)))
     l2 = ListNode(val=1, next=ListNode(val=3, next=ListNode(val=4, next=None)))
-    print(solution.mergeTwoLists(l1, l2))
+    print(solution.merge_two_lists(l1, l2))
 
     l3 = None
     l4 = None
-    print(solution.mergeTwoLists(l3, l4))
+    print(solution.merge_two_lists(l3, l4))
 
     l5 = None
     l6 = ListNode(val=0, next=None)
-    print(solution.mergeTwoLists(l5, l6))
+    print(solution.merge_two_lists(l5, l6))

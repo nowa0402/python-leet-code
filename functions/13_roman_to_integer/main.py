@@ -1,5 +1,5 @@
 class Solution:
-    def romanToInt(self, s: str) -> int:
+    def roman_to_int(self, s: str) -> int:
         roman_map = {
             "I": 1,
             "V": 5,
@@ -33,7 +33,7 @@ class Solution:
         return result
 
     # 別解。おしゃれ
-    def romanToInt_2(self, s: str) -> int:
+    def roman_to_int_2(self, s: str) -> int:
         translations = {
             "I": 1,
             "V": 5,
@@ -54,9 +54,9 @@ class Solution:
 
 if __name__ == "__main__":
     solution = Solution()
-    print(solution.romanToInt("III"))
-    print(solution.romanToInt("LVIII"))
-    print(solution.romanToInt("MCMXCIV"))
-    print(solution.romanToInt_2("III"))
-    print(solution.romanToInt_2("LVIII"))
-    print(solution.romanToInt_2("MCMXCIV"))
+    print(solution.roman_to_int("III"))
+    print(solution.roman_to_int("LVIII"))
+    print(solution.roman_to_int("MCMXCIV"))
+    print(solution.roman_to_int_2("III"))
+    print(solution.roman_to_int_2("LVIII"))
+    print(solution.roman_to_int_2("MCMXCIV"))

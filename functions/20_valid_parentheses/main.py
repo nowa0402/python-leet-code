@@ -2,7 +2,7 @@ from collections import deque
 
 
 class Solution:
-    def isValid(self, s: str) -> bool:
+    def is_valid(self, s: str) -> bool:
         hash_maps = {
             "{": "}",
             "(": ")",
@@ -27,7 +27,7 @@ class Solution:
         return True if len(q) == 0 else False
 
     # 別解。こっちのほうがきれい
-    def isValid_2(self, s: str) -> bool:
+    def is_valid_2(self, s: str) -> bool:
         mapping = {
             "(": ")",
             "{": "}",
@@ -51,7 +51,7 @@ class Solution:
 
 if __name__ == "__main__":
     solution = Solution()
-    assert solution.isValid("()") is True
-    assert solution.isValid("()[]{}") is True
-    assert solution.isValid("(]") is False
-    assert solution.isValid("([])") is True
+    assert solution.is_valid("()") is True
+    assert solution.is_valid("()[]{}") is True
+    assert solution.is_valid("(]") is False
+    assert solution.is_valid("([])") is True
